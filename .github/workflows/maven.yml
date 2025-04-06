@@ -20,10 +20,10 @@ jobs:
           cache: maven
 
       - name: Build and test with Maven
-        run: mvn -B clean verify --file beer-service/pom.xml
+        run: mvn -B clean verify
 
       - name: Build Docker image
-        run: docker build -t beer-service:latest -f Dockerfile .
+        run: docker build -t beer-service:latest .
 
       - name: Run Docker container for testing
         run: |
