@@ -40,7 +40,6 @@ public class BeerDto {
     private BeerStyleEnum beerStyleEnum;
 
     @NotNull
-    @Positive
     private String upc;
 
     @JsonFormat(shape = JsonFormat.Shape.STRING)
